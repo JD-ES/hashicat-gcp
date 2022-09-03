@@ -1,0 +1,15 @@
+module "network" {
+  source  = "app.terraform.io/espinoza_com/network/google"
+  version = "5.2.0"
+  # insert required variables here
+  project_id   = "var.project"
+    network_name = "example-vpc"
+    routing_mode = "GLOBAL"
+
+    subnets = [
+        {
+            subnet_name   = "gaurav-subnet"
+            subnet_ip     = "10.100.10.0/24"
+            subnet_region = var.region
+        }
+}
