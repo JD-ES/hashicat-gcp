@@ -11,7 +11,7 @@ provider "google" {
   project = var.project
   region  = var.region
 }
-
+/*
 resource "google_compute_network" "hashicat" {
   name                    = "${var.prefix}-vpc-${var.region}"
   auto_create_subnetworks = false
@@ -116,4 +116,4 @@ resource "null_resource" "configure-cat-app" {
       host        = google_compute_instance.hashicat.network_interface.0.access_config.0.nat_ip
     }
   }
-}
+}*/
