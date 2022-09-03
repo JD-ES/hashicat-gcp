@@ -1,6 +1,6 @@
 module "network" {
   source  = "app.terraform.io/espinoza_com/network/google"
-  version = "5.2.0"
+  version = "3.4.0"
   # insert required variables here
   project_id   = "var.project"
     network_name = "example-vpc"
